@@ -21,7 +21,7 @@
 {
   environment.systemPackages = with pkgs; [
     # your other packages...
-    inputs.typeman.packages.${pkgs.system}.default
+    inputs.typeman.packages.${system}.default
   ];
 }
 ```
