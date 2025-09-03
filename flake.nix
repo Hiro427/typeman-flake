@@ -26,8 +26,7 @@
             owner = "mzums";
             repo = "typeman";
             rev = "main";
-            sha256 =
-              "sha256-LrnGRbHt8CcS4SZcuZrz+MMvZ++bRdkLW0Sd22pn3ss="; # You'll need to replace this with the actual hash
+            sha256 = "sha256-LrnGRbHt8CcS4SZcuZrz+MMvZ++bRdkLW0Sd22pn3ss=";
 
           };
 
@@ -47,30 +46,23 @@
             rustVersion
             cargo
             pkg-config
-            # font-util
-            # fontconfig
-            # libsixel
           ];
           buildInputs = with pkgs; [
             fontconfig
             libsixel
+            systemd
 
-            # X11/Wayland libraries
+            # X11/Wayland
             xorg.libX11
             xorg.libXcursor
             xorg.libXrandr
             xorg.libXi
             wayland
 
-            # Graphics libraries
+            # Graphics
             libGL
             vulkan-loader
 
-            # Audio (if needed)
-            alsa-lib
-
-            # Additional system libraries
-            systemd
           ];
           LD_LIBRARY_PATH =
             pkgs.lib.makeLibraryPath [ pkgs.libGL pkgs.vulkan-loader ];
