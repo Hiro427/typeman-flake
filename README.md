@@ -13,7 +13,7 @@
     }
 ```
 
-### Add to configuration.nix 
+#### Add to configuration.nix 
 
 ```
 { config, pkgs, inputs, ... }:
