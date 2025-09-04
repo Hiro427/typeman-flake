@@ -1,5 +1,6 @@
-##Warning 
-gui mode is not working, will work on that
+## Warning 
+
+Gui mode is not working, will work on that.
 
 
 ### Add to flake 
